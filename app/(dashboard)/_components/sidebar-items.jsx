@@ -38,7 +38,7 @@ export const SidebarItem = ({
             isActive && "text-sky-700"
           )}
         >
-        {icon}
+          {icon}
         </span>
         {label}
       </div>

@@ -10,7 +10,7 @@ import { SidebarItem } from "./sidebar-items";
 
 const guestRoutes = [
   {
-    icon: <GrHomeRounded size={18}/>,
+    icon: <GrHomeRounded size={18} />,
     label: "Home",
     href: "/dashboard",
   },
