@@ -1,4 +1,4 @@
-export const Admission = () => {
+export default function Admission() {
     return (
         <div>
             <h1>Hello World</h1>
