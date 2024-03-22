@@ -1,8 +1,6 @@
 import Image from "next/image";
 import { IoSearchOutline } from "react-icons/io5";
 import { IoIosArrowDown } from "react-icons/io";
-
-import styles from "./navbar.module.css";
 import Link from "next/link";
 import { GiHamburgerMenu } from "react-icons/gi";
 
@@ -33,7 +31,7 @@ const Navbar = () => {
           src="/images/avatar.png"
           alt="user avatar"
         />
-        <h3 className={styles.student_name}>Adekunle Sukanmi</h3>
+        <h3 className="text[1rem] leading-[20px] font-semibold text-left">Adekunle Sukanmi</h3>
         <IoIosArrowDown size={25} />
       </div>
       <div className="md:hidden flex">

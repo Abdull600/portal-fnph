@@ -1,4 +1,4 @@
-export const Portal = () => {
+export default function Portal() {
     return (
         <div>
             <h1>Hello World</h1>
