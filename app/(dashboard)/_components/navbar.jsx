@@ -17,6 +17,7 @@ const Navbar = () => {
             width={50}
             className="rounded-full"
             src="/logo.svg"
+            alt="logo image"
           />
         </Link>
       </div>
@@ -30,6 +31,7 @@ const Navbar = () => {
           width={50}
           className="rounded-full"
           src="/images/avatar.png"
+          alt="user avatar"
         />
         <h3 className={styles.student_name}>Adekunle Sukanmi</h3>
         <IoIosArrowDown size={25} />

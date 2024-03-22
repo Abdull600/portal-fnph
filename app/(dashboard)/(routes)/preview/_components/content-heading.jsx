@@ -9,6 +9,7 @@ export const PreviewHeading = () => {
                 width={50}
                 src="./logo.svg"
                 className="md:hidden lg:hidden"
+                alt="fnph logo"
             />
 
             <Image
@@ -16,6 +17,7 @@ export const PreviewHeading = () => {
                 width={150}
                 src="./logo.svg"
                 className="hidden md:hidden lg:flex"
+                alt="fnph logo"
             />
 
             <Image
@@ -23,6 +25,7 @@ export const PreviewHeading = () => {
                 width={100}
                 src="./logo.svg"
                 className="hidden md:flex lg:hidden"
+                alt="fnph logo"
             />
 
             <div className="flex flex-col items-center text-[13px] md:text-[14px] lg:text-[20px] justify-center font-semibold md:font-bold lg:font-bold uppercase">
