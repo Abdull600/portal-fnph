@@ -1,0 +1,44 @@
+.sidebar_container {
+  height: 100vh;
+  border-right: 1px solid #ddd;
+  /* Adjust border color as needed */
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  background-color: #fff;
+  border-right: 1px solid #E4E7EC;
+  /* Remove box-shadow if not desired */
+}
+
+.header {
+  padding: 6px;
+  /* Adjust padding as needed */
+}
+
+.logoLink {
+  display: flex;
+  align-items: center;
+  gap: 1px;
+  text-decoration: none;
+  /* Remove underline from Link */
+}
+
+.logoText {
+  background-color: #374151;
+  /* Adjust logo background color */
+  color: white;
+  padding: 2px 5px;
+  border-radius: 4px;
+  font-weight: medium;
+}
+
+.logoSubtext {
+  font-weight: medium;
+}
+
+.content {
+  flex: 1;
+  /* Allow content to fill remaining space */
+  width: 100%;
+  /* Ensure full width */
+}

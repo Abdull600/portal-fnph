@@ -1,0 +1,125 @@
+/* Mobile menu */
+.navbar {
+    display: flex;
+    background-color: #FFFFFF;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    max-height: 50px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+}
+
+.nav {
+    display: none;
+}
+
+.nav_item {
+    list-style: none;
+}
+
+.nav_container {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.menu_container>span {
+    font-size: 2rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.utils {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.portal_btn a {
+    color: #107001;
+    font-family: "Jost", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: bold;
+    font-size: 1rem;
+    line-height: 26px;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: none;
+    border: 1px solid #107001;
+    border-radius: 10px;
+    text-align: center;
+    padding: .5rem;
+}
+
+@media only screen and (min-width: 768px) {
+
+    /* Nav bar section */
+    .menu_container {
+        display: none;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .logo_container img {
+        width: 100%;
+    }
+
+    .nav {
+        list-style: none;
+        display: flex;
+    }
+
+    .nav_item {
+        text-align: center;
+        padding: .5rem;
+    }
+
+    .active-link {
+        color: #107001;
+    }
+
+    .nav_item a {
+        padding: 0.75rem .8rem;
+        text-decoration: none;
+        text-transform: capitalize;
+        font-family: "Jost", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+        color: #000000;
+        font-size: 1rem;
+        line-height: 26px;
+        cursor: pointer;
+    }
+
+    .nav_item a:hover {
+        color: #107001;
+        transition: all 0.25s ease-in-out;
+    }
+
+    .portal_btn {
+        display: flex;
+    }
+
+    .portal_btn a {
+        color: #107001;
+        text-transform: uppercase !important;
+        font-weight: 600;
+        border: 1px solid #107001;
+        border-radius: 10px;
+        padding: 6px 20px;
+    }
+
+    .portal_btn a:hover {
+        background-color: #107001;
+        color: #FFFFFF;
+        transition: all 0.25s ease-in-out;
+    }
+}
