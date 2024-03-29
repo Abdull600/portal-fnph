@@ -1,7 +1,11 @@
+
+import styles from "./portal.module.css";
+import { ApplicationForm } from "./_components/application-form";
+
 export default function Portal() {
     return (
-        <div>
-            <h1>Hello World</h1>
-        </div>
+        <main className="">
+            <ApplicationForm />
+        </main>
     )
 }

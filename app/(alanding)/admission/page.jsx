@@ -1,7 +1,14 @@
+
+import { HeroSection } from "./_components/hero-section";
+import { MainSection } from "./_components/main-section";
+
+
+
 export default function Admission() {
     return (
         <div>
-            <h1>Hello World</h1>
+            <HeroSection />
+            <MainSection showSteps={true} />
         </div>
     )
 }
