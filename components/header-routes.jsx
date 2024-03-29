@@ -1,32 +1,40 @@
 "use client";
 
-import { usePathname, useRouter } from "next/navigation";
+import Link from 'next/link'
+import { usePathname } from 'next/navigation';
 
-import styles from './header.module.css'
 
-export const HeaderRoutes = ({label, href}) => {
+export const HeaderRoutes = ({
+    label,
+    href,
+}) => {
     const pathname = usePathname();
-    const router = useRouter();
 
-    const isActive = 
-    (pathname === "/" && href === "/") || 
-    pathname === href || 
-    pathname?.startsWith(`${href}/`);
 
-    const onClick = () => {
-        router.push(href);
-    }
+    const isActive =
+        (pathname === "/" && href === "/") ||
+        pathname === href ||
+        pathname?.startsWith(`${href}/`);
+
+
+
     return (
-        <ul class={styles.nav}>
-            <li class={styles.nav_item}>
-                <a 
-                    onClick={onClick}
-                    className={(
-                        `${styles.link}`, isActive && `${styles.active-link}`)}
+        <ul className="hidden md:flex lg:flex justify-center items-center gap-5">
+            <li
+            >
+                <Link
+                    href={href}
+                    className="hover:text-[#107001] text-black font-medium text-[18px] leading-6"
+                >
+                    <span
+                        className={(
+                            isActive && "text-[#107001] border-t-2 border-[#107001] py-2"
+                        )}
                     >
-                    {label}
-                </a>
+                        {label}
+                    </span>
+                </Link>
             </li>
-        </ul>
+        </ul >
     )
 }
