@@ -1,7 +1,11 @@
+import { Checkout } from "./_components/checkout";
+import { PaymentHero } from "./_components/payment-hero";
+
 export default function Payment() {
     return (
         <div>
-            <h1>Payment Page</h1>
+            <PaymentHero />
+            <Checkout showSteps={true} />
         </div>
     )
 }
