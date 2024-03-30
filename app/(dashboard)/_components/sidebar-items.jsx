@@ -1,4 +1,4 @@
-"use client";
+"use client"
 
 import { LucideIcon } from "lucide-react";
 import { usePathname, useRouter } from "next/navigation";

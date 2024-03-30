@@ -1,4 +1,4 @@
-"use client";
+
 
 import { GrHomeRounded } from "react-icons/gr";
 import { CgProfile } from "react-icons/cg";
