@@ -3,6 +3,7 @@ import { IoSearchOutline } from "react-icons/io5";
 import { IoIosArrowDown } from "react-icons/io";
 import Link from "next/link";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { MobileSidebar } from "./mobile-sidebar";
 
 const Navbar = () => {
 
@@ -34,12 +35,7 @@ const Navbar = () => {
         <h3 className="text[1rem] leading-[20px] font-semibold text-left">Adekunle Sukanmi</h3>
         <IoIosArrowDown size={25} />
       </div>
-      <div className="md:hidden flex">
-        <GiHamburgerMenu
-          size={30}
-          className="cursor-pointer"
-        />
-      </div>
+      <MobileSidebar />
     </div>
   );
 };
