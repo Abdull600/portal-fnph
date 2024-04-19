@@ -32,7 +32,7 @@ export default function Auth() {
                                     className="w-4 h-4 text-gray-500 dark:text-gray-400"
                                 />
                             </div>
-                            <input type="text" className="bg-[#FFFFFF] border-[1px] border-[#D0D5DD] placeholder-[#98A2B3] text-[#101928] text-sm rounded-[6px] focus:ring-1 focus:ring-green-500 focus:border-green-500 block w-full ps-2.5 p-2.5" placeholder="Enter Password" />
+                            <input type="password" className="bg-[#FFFFFF] border-[1px] border-[#D0D5DD] placeholder-[#98A2B3] text-[#101928] text-sm rounded-[6px] focus:ring-1 focus:ring-green-500 focus:border-green-500 block w-full ps-2.5 p-2.5" placeholder="Enter Password" />
                         </div>
                     </div>
                     {/* checkbox */}
