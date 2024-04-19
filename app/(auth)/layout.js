@@ -10,7 +10,8 @@ export default function AuthLayout({ children }) {
                 <br />
                 <HeaderLogo />
             </div>
-            <main className="h-full w-full flex justify-center items-center py-5 md:py-0">
+
+            <main className="h-full w-full flex justify-center items-center pt-5 md:py-0">
                 {children}
             </main>
         </div>

@@ -6,7 +6,7 @@ export const Form = () => {
             <h1 className="text-[15px] md:text-[18px] lg:text-[24px] font-semibold tracking-[-2%] leading-7 text-[#000] ">
                 Sponsor
             </h1>
-            <p className="text-[#475367] w-[400px] py-1 leading-6 text-[14px] md:text-[16px] lg:text-[16px] font-normal">
+            <p className="text-[#475367] w-full md:w-[400px] py-1 leading-6 text-[14px] md:text-[16px] lg:text-[16px] font-normal">
                 You are expected to print out this form and re-upload a filled version of
                 it from your sponsor(s) for confirmation
             </p>
