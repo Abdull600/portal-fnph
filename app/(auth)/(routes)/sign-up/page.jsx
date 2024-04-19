@@ -1,4 +1,4 @@
-"use client"
+
 
 import Image from "next/image";
 import Link from "next/link";
@@ -8,17 +8,12 @@ import { FiEyeOff } from "react-icons/fi";
 
 
 export default function Auth() {
-    const route = useRouter();
 
-    const handleClick = () => {
-        alert("Registration successful... to Dashboad");
-        route.push("/dashboard");
-    }
 
 
     return (
-        <div className="flex flex-col gap-2 flex-start items-center justify-center pt-[10px] w-full mx-10 md:mx-0 md:w-0">
-            <div className="bg-[#FF0006]/[8%] w-full md:w-[488px] h-[54px] rounded-[15px] border-[1.5px] border-[#FCC2C2] px-2 py-1">
+        <div className="flex flex-col gap-2 flex-start items-center justify-center mt-[-50px] md:mt-0 md:pt-[10px]  w-full h-[100vh] md:h-full mx-1 md:mx-0 md:w-0">
+            <div className="bg-[#FF0006]/[8%] w-full md:w-[488px] h-[80px] md:h-[54px] rounded-[15px] border-[1.5px] border-[#FCC2C2] px-2 py-1">
                 <div className="relative">
                     <div className="absolute inset-y-0 start-0 flex items-center ps-0 pointer-events-none">
                         <Image
@@ -83,17 +78,18 @@ export default function Auth() {
                     {/* submit button */}
                     <div className="w-full mx-auto py-2 md:py-4">
                         <button
-                            onClick={handleClick}
                             className="bg-[#107001] text-[#ffffff] w-full rounded-[6px] px-[24px] py-2.5 text-[14px] md:text-[16px] font-semibold leading-[23.3px]"
                             type="submit"
                         >
-                            Create Account
+                            <Link href="/dashboard">
+                                Create Account
+                            </Link>
                         </button>
                     </div>
                     {/* signup btn */}
                     <div className="w-full mx-auto py-1">
                         <div className="flex items-center justify-center">
-                            <label htmlFor="link-checkbox" className="ms-2 text-[14px] font-medium text-[#101928] leading-[20.3px]">Already have an account?      <Link href="/" className="text-[#107001] text-[12px] md:text-[14px] font-bold leading-[20.3px] capitalize hover:underline">Back to log in page</Link>.</label>
+                            <label htmlFor="link-checkbox" className="ms-2 text-[14px] font-medium text-[#101928] leading-[20.3px]">Already have an account?      <Link href="/" className="text-[#107001] text-[14px] font-bold leading-[20.3px] capitalize hover:underline">Back to log in page</Link>.</label>
                         </div>
                     </div>
                 </form>

@@ -32,7 +32,7 @@ export const PreviewHeading = () => {
                 <h2 className="leading-[29px]">
                     SCHOOL OF PSYCHIATRIC NURSING
                 </h2>
-                <h2 className="leading-[29px]">
+                <h2 className="leading-[29px] text-center">
                     FEDERAL NEURO-PSYCHIATRIC HOSPITAL, KADUNA
                 </h2>
                 <h2 className="leading-[29px]">
@@ -41,7 +41,7 @@ export const PreviewHeading = () => {
                 <h2 className="leading-[29px]">
                     APPLICATION FORM
                 </h2>
-                <h2 className="leading-[29px]">
+                <h2 className="leading-[29px] text-center">
                     POST-BASIC PSYCHIATRIC NURSING (18 MONTHS)
                 </h2>
             </div>
