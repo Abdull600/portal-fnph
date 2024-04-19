@@ -2,9 +2,10 @@
 
 import Link from 'next/link'
 import { usePathname } from 'next/navigation';
+import { Separator } from './ui/separator';
 
 
-export const HeaderRoutes = ({
+export const SidebarRoutes = ({
     label,
     href,
 }) => {
@@ -19,22 +20,18 @@ export const HeaderRoutes = ({
 
 
     return (
-        <ul className="hidden md:flex lg:flex justify-center items-center gap-5">
+        <ul className="flex flex-col w-full justify-center items-center gap-5">
             <li
+                className='px-6 py-2 flex flex-col justify-start items-center w-full'
             >
                 <Link
                     href={href}
-                    className="hover:text-[#107001] text-black font-medium text-[18px] leading-6"
+                    className="hover:text-[#107001] w-full text-black font-medium text-[18px] leading-6"
                 >
-                    <span
-                        className={
-                            isActive ? "text-[#107001] border-t-2 border-[#107001] py-2" : ""
-                        }
-                    >
-                        {label}
-                    </span>
+                    {label}
                 </Link>
             </li>
+            <Separator className="w-full" />
         </ul >
     )
 }

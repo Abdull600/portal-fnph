@@ -7,7 +7,7 @@ export const ContactDetails = () => {
             <p className="text-[#475367] py-1 leading-6 text-[14px] md:text-[16px] lg:text-[16px] font-normal ">
                 Let&#8217;s continue your admission process.
             </p>
-            <form className="max-w-screen-lg w-full md:w-80 lg:w-80">
+            <div className="max-w-screen-lg w-full md:w-80 lg:w-80">
                 <div className="flex flex-col gap-[1.7rem]">
                     {/* Postal address */}
                     <div className="relative h-[40px] w-full min-w-[200px]">
@@ -32,12 +32,7 @@ export const ContactDetails = () => {
                             className="peer h-full w-full rounded-[6px] border border-[#D0D5DD]  bg-transparent px-3 py-1 font-sans text-sm font-normal text-[#000] outline outline-0 transition-all placeholder-shown:border placeholder-shown:border-blue-gray-200 placeholder-shown:border-t-blue-gray-200 focus:border-2 focus:border-gray-900 focus:border-t-transparent focus:!border-t-gray-900 focus:outline-0 disabled:border-0 disabled:bg-blue-gray-50" />
                     </div>
                 </div>
-                <button
-                    className="mt-10 block w-full select-none rounded-[6px] bg-[#D0D5DD] py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-gray-900/10 transition-all hover:shadow-sm hover:shadow-gray-900 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
-                    type="button">
-                    Save Contact Details
-                </button>
-            </form>
+            </div>
         </div>
     )
 }

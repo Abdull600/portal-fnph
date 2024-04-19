@@ -17,18 +17,17 @@ const formInputData = {
     passportPhoto: '',
 }
 
-const stepsArray = ['Bio-Data', 'Contact Details',
-    'Personal Information', 'Education', 'Professional Qualification',
-    'Work Experience'];
+const stepsArray = ['Personal Information', 'Education',
+    'Professional Qualification', 'Work Experience'];
 
 export const FormSteps = ({ showSteps }) => {
-    const [step, setStep] = useState('Bio-Data');
+    const [step, setStep] = useState('Personal Information');
     const [formData, setFormData] = useState(formInputData)
 
     const handleNextStep = () => {
-        if (step === 'Bio-Data') setStep('Contact Details')
-        else if (step === 'Contact Details') setStep('Personal Information');
-        else if (step === 'Personal Information') setStep('Education');
+        // if (step === 'Bio-Data') setStep('Contact Details')
+        // else if (step === 'Contact Details') setStep('Personal Information');
+        if (step === 'Personal Information') setStep('Education');
         else if (step === 'Education') setStep('Professional Qualification');
         else if (step === 'Professional Qualification') setStep('Work Experience');
     }
@@ -89,8 +88,6 @@ export const FormSteps = ({ showSteps }) => {
 
             <div className="py-2">
                 {/* Forms */}
-                {step === 'Bio-Data' ? <BioData /> : null}
-                {step === 'Contact Details' ? <ContactDetails /> : null}
                 {step === 'Personal Information' ? <PersonalInfo /> : null}
                 {step === 'Education' ? <Education /> : null}
                 {step === 'Professional Qualification' ? <Qualification /> : null}

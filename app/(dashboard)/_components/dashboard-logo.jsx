@@ -1,9 +1,9 @@
 import Image from "next/image"
 import Link from "next/link"
 
-export const Logo = () => {
+export const DashboardLogo = () => {
     return (
-        <Link href="/">
+        <Link href="/dashboard">
             <Image
                 height={50}
                 width={50}
